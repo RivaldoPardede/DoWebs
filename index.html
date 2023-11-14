@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" type="image/x-icon" href="dist/Images/lightLogo.png">
+    <script>document.documentElement.classList.add('js')</script>
     <title>DoWebs</title>
 </head>
 <body class="font-poppins dark:bg-gray-900">
     <!-- Header Start -->
-    <header class="dark:bg-gray-900 dark:text-white absolute py-1 top-0 lg:px-20 md:px-20 w-full flex items-center border-b-[1px] shadow-lg dark:shadow-sm dark:shadow-white  z-1">
+    <header class="dark:bg-gray-900 dark:text-white absolute py-1 top-0 lg:px-20 md:px-20 w-full flex items-center border-b-[1px] shadow-lg dark:shadow-sm dark:shadow-white ">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                <div class="flex items-center px-4" id="website_logo">
+                <div class="flex items-center px-4 z-0" id="website_logo">
                     <img class="block dark:hidden" src="dist/Images/darkLogo-1.png" width="50" alt="DoWebsLogo">
                     <img class="hidden dark:block" src="dist/Images/lightLogo.png" width="49" alt="DoWebsLogo">
                     <a href="#home" class="pl-3 font-bold text-2xl">DoWebs</a>
@@ -24,7 +26,7 @@
                     </button>
 
                     <nav id="nav-menu" class="py-2 hidden lg:relative absolute bg-white dark:bg-gray-900 shadow-lg max-w-[200px] w-full right-4
-                    top-full lg:block lg-static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    top-full lg:block lg-static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none z-10">
                         <ul class="block text-center lg:flex font-medium">
                             <li class="lineEffect">
                                 <a href="#home" class="font-bold inline-block text-base py-2 mx-8 relative">Home</a>
@@ -59,10 +61,10 @@
     <!-- Header End -->
 
     <!-- Home Page Start -->
-    <section id="home" class="mt-32 lg::mt-36 pt-28 pb-32 dark:bg-gray-900 dark:text-white border-b dark:border-b-gray-400">
-        <div class="container">
+    <section id="home" class="min-[300px]:mt-20  md:mt-32 lg::mt-36 pt-28 pb-32 dark:bg-gray-900 dark:text-white border-b dark:border-b-gray-400">
+        <div class="container duration-[600ms] taos:translate-y-[-200px] taos:opacity-0" data-taos-offset="500">
             <div class=" relative max-w-5xl mx-auto flex justify-center">
-                <h1 class="font-bold text-4xl lg:text-6xl tracking-tight text-center font-sans
+                <h1 class="font-bold min-[300px]:text-2xl sm:text-4xl lg:text-6xl tracking-tight text-center font-sans
                 relative  before:absolute before:inset-0 before:animate-typewriter before:bg-white dark:before:bg-gray-900 after:absolute 
                 after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black dark:after:bg-white">
                     WELCOME TO DOWEBS
@@ -90,12 +92,12 @@
     <!-- Project Page Start -->
     <section id="project" class="pt-20 pb-32 border-b dark:border-b-gray-400 bg-slate-100 dark:bg-gray-900 dark:text-white">
         <div class="container ">
-            <div class="text-3xl font-bold py-10 flex justify-center">
+            <div class="text-3xl font-bold py-10 flex justify-center duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
                 <h2>Recent Project</h2>
             </div>
             <div class="max-w-[55rem] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-20">
                 <!--Card 1-->
-                <div class="rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600">
+                <div class="card rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
                     <img class="" src="dist/Images/Project/DoWebs.png" alt="DoWebs" width="100%" height="312">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-center">Business website</div>
@@ -107,7 +109,7 @@
                     </div>
                 </div>
                 <!--Card 2-->
-                <div class="rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600">
+                <div class="card rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
                     <img class="" src="dist/Images/Project/Portfolio.png" alt="Portfolio" width="100%" height="312">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-center">Portfolio website</div>
@@ -119,7 +121,7 @@
                     </div>
                 </div>
                 <!--Card 3-->
-                <div class="rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600">
+                <div class="card rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
                     <img class="" src="dist/Images/Project/Bookshelf.png" alt="Bookshelf" width="100%" height="312">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-center">Bookshelf</div>
@@ -131,7 +133,7 @@
                     </div>
                 </div>
                 <!--Card 4-->
-                <div class="rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600">
+                <div class="card rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
                     <img class="" src="dist/Images/Project/ToDoList.png" alt="DoWebs" width="100%" height="312">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-center">ToDoList</div>
@@ -155,11 +157,11 @@
             </div>
             <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Pricing Card - Basic -->
-                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white duration-[700ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="300">
                     <h3 class="mb-4 text-2xl font-semibold">Basic</h3>
                     <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Landing Page with 1 page, Responsive Design, 3 times revision and more things</p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$50+</span>
+                        <span class="mr-2 text-5xl font-extrabold">$40+</span>
                     </div>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
@@ -186,17 +188,17 @@
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class=" w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>10 Days Delivery</span>
+                            <span>7 Days Delivery</span>
                         </li>
                     </ul>
                     <a href="#contact" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-gray-900-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                 </div>
                 <!-- Pricing Card - Basic -->
-                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white duration-[700ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="300">
                     <h3 class="mb-4 text-2xl font-semibold">Standard</h3>
                     <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Landing Page with 2 page, Responsive Design, 4 times revision and more things</p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$60+</span>
+                        <span class="mr-2 text-5xl font-extrabold">$50+</span>
                     </div>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
@@ -218,22 +220,22 @@
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class=" w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>4 Revision</span>
+                            <span>3 Revision</span>
                         </li>
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class=" w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>8 Days Delivery</span>
+                            <span>6 Days Delivery</span>
                         </li>
                     </ul>
                     <a href="#contact" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                 </div>
                 <!-- Pricing Card - Basic -->
-                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div class="flex flex-col  p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white duration-[700ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="300">
                     <h3 class="mb-4 text-2xl font-semibold">Premium</h3>
                     <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Landing Page with 3 page, Responsive Design, 5 times revision and more things</p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$75+</span>
+                        <span class="mr-2 text-5xl font-extrabold">$60+</span>
                     </div>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
@@ -255,12 +257,12 @@
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class=" w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>5 Revision</span>
+                            <span>3 Revision</span>
                         </li>
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class=" w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>7 Days Delivery</span>
+                            <span>5 Days Delivery</span>
                         </li>
                     </ul>
                     <a href="#contact" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
@@ -272,26 +274,26 @@
 
     <!-- Contact Page Start -->
     <section id="contact" class="pt-36 pb-32 border-b dark:border-b-gray-400 dark:text-white">
-        <div class="container">
+        <div class="container delay-[100ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="0">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h2 class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
                     <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo?</p>
                 </div>
             </div>
-            <form action="">
+            <form method="post" netlify="true">
                 <div class="w-full lg:w-2/3 lg:mx-auto ">
                     <div class="w-full mb-8 px-4">
                         <label for="name" class="text-base text-primary font-bold">Name</label>
-                        <input required type="text" id="name" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
+                        <input required type="text" placeholder="Your Name" id="name" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full mb-8 px-4">
                         <label for="email" class="text-base text-primary font-bold">Email</label>
-                        <input required type="email" id="email" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
+                        <input required type="email" placeholder="Your email address" id="email" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full mb-8 px-4">
                         <label for="message" class="text-base text-primary font-bold">Message</label>
-                        <textarea required type="text" id="message" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary h-32"></textarea>
+                        <textarea required type="text" placeholder="Your Messages" id="message" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
                     <div class="flex justify-center relative pt-3">
                         <button type="submit" class="relative px-8 py-3 overflow-hidden font-medium text-gray-600 dark:text-gray-100 bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800 rounded-lg shadow-inner-[bg-white] group">
@@ -362,6 +364,8 @@
     <!-- Footer Page End -->
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/animation.js"></script>
 </body>
 </html>
