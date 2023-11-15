@@ -281,7 +281,7 @@
                     <p class="font-medium text-md text-secondary md:text-lg">Do you have something to say?</p>
                 </div>
             </div>
-            <form method="post" data-netlify="true" name="contact">
+            <form method="post" data-netlify="true" name="contact" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                 <div class="w-full lg:w-2/3 lg:mx-auto ">
                     <div class="w-full mb-8 px-4">
                         <label for="name" class="text-base text-primary font-bold">Name</label>
@@ -295,7 +295,7 @@
                         <label for="message" class="text-base text-primary font-bold">Message</label>
                         <textarea required type="text" name="message" placeholder="Your Messages" id="message" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
-                    <div data-netlify-recaptcha="true"></div>
+                    <div data-netlify-recaptcha="true" class="w-full mb-8 px-4 dark:bg-black dark:text-white"></div>
                     <div class="flex justify-center relative pt-3">
                         <button type="submit" class="relative px-8 py-3 overflow-hidden font-medium text-gray-600 dark:text-gray-100 bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800 rounded-lg shadow-inner-[bg-white] group">
                             <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 dark:border-gray-100 group-hover:w-full ease"></span>
