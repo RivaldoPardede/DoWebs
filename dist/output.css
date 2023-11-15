@@ -472,19 +472,9 @@ video {
   border-color: #e5e7eb;
 }
 
-.dark [role="tooltip"] > [data-popper-arrow]:before{
-  border-style: solid;
-  border-color: #4b5563;
-}
-
 [role="tooltip"] > [data-popper-arrow]:after{
   border-style: solid;
   border-color: #e5e7eb;
-}
-
-.dark [role="tooltip"] > [data-popper-arrow]:after{
-  border-style: solid;
-  border-color: #4b5563;
 }
 
 [data-popover][role="tooltip"][data-popper-placement^='top'] > [data-popper-arrow]:before{
@@ -689,11 +679,6 @@ select:not([size]){
   background-size: 1em 1em;
 }
 
-.dark [type='radio']:checked{
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
-  background-size: 1em 1em;
-}
-
 [type='checkbox']:indeterminate{
   background-image: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 12'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M1 5.917 5.724 10.5 15 1.5'/%3e %3c/svg%3e");
   background-color: currentColor;
@@ -748,15 +733,6 @@ input[type=file]::file-selector-button:hover{
   padding-left: 1rem;
 }
 
-.dark input[type=file]::file-selector-button{
-  color: white;
-  background: #4B5563;
-}
-
-.dark input[type=file]::file-selector-button:hover{
-  background: #6B7280;
-}
-
 input[type="range"]::-webkit-slider-thumb{
   height: 1.25rem;
   width: 1.25rem;
@@ -771,10 +747,6 @@ input[type="range"]::-webkit-slider-thumb{
 
 input[type="range"]:disabled::-webkit-slider-thumb{
   background: #9CA3AF;
-}
-
-.dark input[type="range"]:disabled::-webkit-slider-thumb{
-  background: #6B7280;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb{
@@ -801,10 +773,6 @@ input[type="range"]::-moz-range-thumb{
 
 input[type="range"]:disabled::-moz-range-thumb{
   background: #9CA3AF;
-}
-
-.dark input[type="range"]:disabled::-moz-range-thumb{
-  background: #6B7280;
 }
 
 input[type="range"]::-moz-range-progress{
@@ -1208,13 +1176,13 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   transform-origin: top left;
 }
 
-.translate-y-\[200px\]{
-  --tw-translate-y: 200px;
+.translate-y-\[-200px\]{
+  --tw-translate-y: -200px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[-200px\]{
-  --tw-translate-y: -200px;
+.translate-y-\[200px\]{
+  --tw-translate-y: 200px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1658,24 +1626,8 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   transition-delay: 300ms;
 }
 
-.delay-\[300ms\]{
-  transition-delay: 300ms;
-}
-
-.delay-\[600ms\]{
-  transition-delay: 600ms;
-}
-
-.delay-\[400ms\]{
-  transition-delay: 400ms;
-}
-
 .delay-\[100ms\]{
   transition-delay: 100ms;
-}
-
-.delay-\[\]{
-  transition-delay: ;
 }
 
 .\!duration-\[0ms\]{
@@ -1694,10 +1646,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   transition-duration: 600ms;
 }
 
-.duration-\[300ms\]{
-  transition-duration: 300ms;
-}
-
 .duration-\[700ms\]{
   transition-duration: 700ms;
 }
@@ -1706,20 +1654,12 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.\[animation-iteration-count\:infinite\]{
-  animation-iteration-count: infinite;
-}
-
 .\[backface-visibility\:hidden\]{
   backface-visibility: hidden;
 }
 
 .\[transform\:perspective\(2500px\)_rotateY\(100deg\)\]{
   transform: perspective(2500px) rotateY(100deg);
-}
-
-.\[transform\:perspective\(250px\)_rotateY\(100deg\)\]{
-  transform: perspective(250px) rotateY(100deg);
 }
 
 .navbar-fixed{
@@ -1933,6 +1873,11 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   border-bottom-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:bg-black){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:bg-gray-800){
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1982,14 +1927,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 :is(.dark .dark\:shadow-white){
   --tw-shadow-color: #ffffff;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-:is(.dark .dark\:delay-\[0\]){
-  transition-delay: 0;
-}
-
-:is(.dark .dark\:delay-0){
-  transition-delay: 0s;
 }
 
 :is(.dark .dark\:before\:bg-gray-900)::before{
