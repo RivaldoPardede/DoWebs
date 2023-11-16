@@ -2,6 +2,8 @@ Website ini merupakan penilaian UTS Lab Pemrograman Web, dimana kami ditugaskan 
 Website ini memiliki 6 bagian, yakni header, home, project, service, contact, footer. Masing-masing bagian sudah terhubung melalui navigation bar. Website ini sudah responsive
 dan memiliki fitur dark mode.
 
+URL: https://dowebs.netlify.app/
+
 Desktop Screen
 <img width="960" alt="image" src="https://github.com/RivaldoPardede/PW5-UTS-221401060/assets/114504295/8b661f85-6d60-43a5-b09f-3e5e6b5321f5">
 <img width="960" alt="image" src="https://github.com/RivaldoPardede/PW5-UTS-221401060/assets/114504295/2cb5b588-0a82-4854-9dd5-f02141a4d8c0">
