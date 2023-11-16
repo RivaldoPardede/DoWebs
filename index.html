@@ -287,14 +287,15 @@
                       Don't fill this out if you're human: <input name="bot-field" />
                     </label>
                 </p>
+                <input type="hidden" name="subject" value="New lead from %{formName} (%{submissionId})" />
                 <div class="w-full lg:w-2/3 lg:mx-auto ">
                     <div class="w-full mb-8 px-4">
                         <label for="name" class="text-base text-primary font-bold">Name</label>
-                        <input required type="text" name="name" placeholder="Your Name" id="name" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
+                        <input required type="text" name="name" placeholder="Please input your valid name" id="name" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full mb-8 px-4">
                         <label for="email" class="text-base text-primary font-bold">Email</label>
-                        <input required type="email" name="email" placeholder="Your email address" id="email" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
+                        <input required type="email" name="email" placeholder="Please input your valid gmail" id="email" class="w-full text-gray-600 dark:bg-gray-800 dark:text-white border border-gray-100 dark:border-gray-600 bg-gray-100 rounded-lg shadow-inner p-3 focus:outline-none focus:ring-gray-900 focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full mb-8 px-4">
                         <label for="message" class="text-base text-primary font-bold">Message</label>
